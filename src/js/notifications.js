@@ -4,6 +4,7 @@ export function showWarning() {
     title: "Hmmm 🤔",
     text: "Too many matches found. Please enter a more specific query!",
     button: "Oh, ok!",
+    timer: 3000
   })
 }
 
@@ -13,5 +14,6 @@ export function showError() {
     text: "Nothing is found(",
     button: false,
     className: "error",
+    timer: 3000
   })
 }

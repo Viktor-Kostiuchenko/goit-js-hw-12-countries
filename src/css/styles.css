@@ -7,6 +7,7 @@ body {
   background-color: #222222;
   color: #999999;
 }
+
 .form__group {
   position: relative;
   padding: 15px 0 0;
@@ -70,6 +71,15 @@ body {
   list-style: none;
 }
 
+.country__info {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.country__info li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .country__info-wrapper {
   display: flex;
   align-items: center;
@@ -83,12 +93,25 @@ body {
   margin-right: 30px;
 }
 
-.country__languages {
+.country__language-wrapper,
+.country__currency-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+.country__language-title,
+.country__currency-title {
+  margin: 0;
+}
+
+.country__language-list,
+.country__currency-list {
+  display: inline-block;
   margin: 0;
   padding: 0;
 }
 
-.country__languages-item {
+.country__languages-item,
+.country__currency-item {
   list-style: none;
   padding-left: 15px;
 }
