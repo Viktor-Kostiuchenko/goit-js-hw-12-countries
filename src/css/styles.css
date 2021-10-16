@@ -1,11 +1,7 @@
 body {
   font-family: 'Poppins', sans-serif;
-  /* display: flex; */
   padding-top: 80px;
   padding-left: 80px;
-
-  /* flex-direction: column; */
-  /* align-items: center; */
   min-height: 100vh;
   font-size: 1.5rem;
   background-color: #222222;
@@ -118,4 +114,63 @@ body {
 .country__flag--smaller {
   width: 50px;
   margin-right: 10px;
+}
+
+.swal-modal {
+  position: absolute;
+  max-width: 300px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px;
+  margin: 0;
+  background: linear-gradient(#f0c27b, #f0c27b);
+}
+
+.swal-icon {
+  display: none;
+}
+.swal-title {
+  color: rgba(0, 0, 0, 1);
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.swal-text {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.swal-button {
+  background-color: #4b1248;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.swal-button:hover {
+  background-color: #9b9b9b;
+}
+
+.swal-button:not([disabled]):hover {
+  background-color: #9b9b9b;
+}
+
+.swal-footer {
+  margin: 0;
+  padding: 0;
+}
+
+.swal-icon--warning__body {
+  top: 8px;
+}
+.swal-icon--warning__dot {
+  margin-left: -3px;
+}
+
+.swal-button-container {
+  margin: 0;
+}
+
+.error {
+  background: linear-gradient(#ff416c, #ff4b2b);
 }

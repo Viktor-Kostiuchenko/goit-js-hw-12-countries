@@ -1,28 +1,17 @@
-import { defaults, Stack, error } from '@pnotify/core';
-import '@pnotify/core/dist/BrightTheme.css';
-
-const defaultStack = new Stack({
-  dir1: 'down',
-  dir2: 'left',
-  firstpos1: 25,
-  firstpos2: 25,
-  spacing1: 36,
-  spacing2: 36,
-  push: 'bottom',
-  context: document.body
-})
+import swal from 'sweetalert'
+export function showWarning() {
+  swal({
+    title: "Hmmm 🤔",
+    text: "Too many matches found. Please enter a more specific query!",
+    button: "Oh, ok!",
+  })
+}
 
 export function showError() {
-  error({
-    title: 'Ooops',
-    text: 'Too many matches found. Please enter a more specific query!',
-    icon: 'fas fa-info-circle',
-    hide: true,
-    closer: true,
-    sticker: false,
-    destroy: true,
-    delay: 125000,
-
-    stack: defaultStack
+  swal({
+    title: "Oops 😟",
+    text: "Nothing is found(",
+    button: false,
+    className: "error",
   })
 }
