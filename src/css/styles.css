@@ -164,20 +164,6 @@ body {
   margin-bottom: 10px;
 }
 
-.swal-button {
-  background-color: #4b1248;
-  padding: 10px;
-  font-size: 12px;
-}
-
-.swal-button:hover {
-  background-color: #9b9b9b;
-}
-
-.swal-button:not([disabled]):hover {
-  background-color: #9b9b9b;
-}
-
 .swal-footer {
   margin: 0;
   padding: 0;
@@ -188,10 +174,6 @@ body {
 }
 .swal-icon--warning__dot {
   margin-left: -3px;
-}
-
-.swal-button-container {
-  margin: 0;
 }
 
 .error {

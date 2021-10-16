@@ -3,8 +3,8 @@ export function showWarning() {
   swal({
     title: "Hmmm 🤔",
     text: "Too many matches found. Please enter a more specific query!",
-    button: "Oh, ok!",
-    timer: 3000
+    button: false,
+    timer: 4000
   })
 }
 
